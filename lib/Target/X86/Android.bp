@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-tblgen_includes = " -I external/llvm8/include -I external/llvm8/lib/Target/X86"
+tblgen_includes = " -I external/bpftrace/llvm8/include -I external/bpftrace/llvm8/lib/Target/X86"
 
 generated_headers = [
     "llvm8_lib_Target_X86_X86GenAsmMatcher_inc",

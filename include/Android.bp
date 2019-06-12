@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-llvm_tblgen_includes = " -I external/llvm8/include"
+llvm_tblgen_includes = " -I external/bpftrace/llvm8/include"
 
 header_genrules = [
     "llvm8_include_llvm_IR_Attributes_inc",
