@@ -310,6 +310,10 @@
 /* Doesn't use `cmakedefine` because it is allowed to be empty. */
 #define LLVM_DEFAULT_TARGET_TRIPLE "aarch64-none-linux-gnu"
 
+#elif defined(__arm__)
+
+#define LLVM_DEFAULT_TARGET_TRIPLE "arm-unknown"
+
 #else
 
 #error "Unknown native architecture"

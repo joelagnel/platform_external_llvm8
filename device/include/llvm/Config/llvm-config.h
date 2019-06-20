@@ -84,6 +84,14 @@
 /* LLVM name for the native target MC init function, if available */
 #define LLVM_NATIVE_TARGETMC LLVMInitializeAArch64TargetMC
 
+#elif defined(__arm__)
+
+/* Target triple LLVM will generate code for by default */
+#define LLVM_DEFAULT_TARGET_TRIPLE "arm-unknown"
+
+/* Host triple LLVM will be executed on */
+#define LLVM_HOST_TRIPLE "arm-unknown"
+
 #else
 
 #error "Unknown native architecture"
